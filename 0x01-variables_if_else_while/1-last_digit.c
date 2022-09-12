@@ -1,4 +1,5 @@
-#include <studio.h>
+#include <time.h>
+#include <stdio.h>
 /**
  *main - print the last digit of the number 
  * 
