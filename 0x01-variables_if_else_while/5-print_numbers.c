@@ -6,8 +6,8 @@
 *Return: 0 always
 */
 int main(void)
-{int numb;
+{int num;
 for (num = 0; num < 10; num++)
-print("%d", num);
-print('\n');
+printf("%d", num);
+printf('\n');
 return (0); }
