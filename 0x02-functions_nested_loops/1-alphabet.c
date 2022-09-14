@@ -9,7 +9,7 @@
 */
 int main(void)
 { char letter;
-for (letter = 'a'; let <= 'z'; leter++)
+for (letter = 'a'; let <= 'z'; letter++)
 putchar(letter);
 putchar('\n');
-return (0); }
+return (0); i}
