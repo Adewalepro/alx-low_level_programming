@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
 *main - a function that prints the alphabet, in lowercase
@@ -7,8 +8,8 @@
 *Return 0 always
 */
 int main(void)
-{ char let;
-for (let = 'a'; let <= 'z'; let++)
-putchar(let);
+{ char letter;
+for (letter = 'a'; let <= 'z'; leter++)
+putchar(letter);
 putchar('\n');
 return (0); }
