@@ -4,7 +4,7 @@
 *Description: Numbers should be printed in ascending order, with three digits
 *
 *
-*Returnn: 0 always
+*Return: 0 always
 */
 int main(void)
 {int digit1, digit2, digit3;
