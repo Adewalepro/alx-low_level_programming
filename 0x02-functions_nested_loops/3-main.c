@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <ctype.h>
 /**
 * main - check the code.
 *
@@ -5,11 +7,11 @@
 */
 int main(void)
 { int r;
-r = _islower('H');
-_putchar(r + '0');
-r = _islower('o');
-_putchar(r + '0');
-r = _islower(108);
+r = islower('H');
+putchar(r + '0');
+r = islower('o');
+putchar(r + '0');
+r = islower(108);
 putchar(r + '0');
 putchar('\n');
 return (0); }
