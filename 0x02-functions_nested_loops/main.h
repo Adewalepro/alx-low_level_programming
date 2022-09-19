@@ -8,6 +8,6 @@ int main(void);
 void print_alphabet_x10(void);
 
 int main(void)
-int _islower(int c);
+int _islower(void);
 
 #endif /* MAIN_H */
