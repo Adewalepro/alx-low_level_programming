@@ -1,19 +1,19 @@
 #include "main.h"
 /**
-*test_islower - Test the _islower function
+*test_isalpha - Test the _isalpha function
 *
-*@n: Number to pass to _islower function
+*@n: Number to pass to _isalpha function
 */
-void test_islower(int n)
+void test_isalpha(int n)
 { int r;
-r = _islower(n);
+r = _isalpha(n);
 _putchar(r + '0');
 _putchar('\n'); }
 /**
-*main - check the code
+*main - check the code for Holberton School students.
 *
 *Return: Always 0.
 */
 int main(void)
-{test_islower('H');
+{ _isalpha('H');
 return (0); }
