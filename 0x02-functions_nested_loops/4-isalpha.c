@@ -1,18 +1,14 @@
 #include "main.h"
 /**
-*_isalpha - Check code
-*@c: An input character
-*Description: function returns 1 if the character is a
-*letter, lowercase or uppercase.
-*Return: 1 or 0 in otherwise.
+*_isalpha - Check for upper case characters
+*@c: character to check
+*Return: 1 if letter, lowercase or upper case, 0 if otherwise
 */
 int _isalpha(int c)
-{ char lower, upper;
-int isletter = 0;
-for (lower = 'a'; lower <= 'z'; lower++)
 {
-for (upper = 'A'; upper <= 'Z'; upper++)
-{
-if (c == lower || c == upper)
-isletter = 1; } }
-return (isletter); }
+if (c >= 'a' && c <= 'z')
+return (1);
+else if (c >= 'A' && c <= 'Z')
+return (1);
+else
+return (0); }
