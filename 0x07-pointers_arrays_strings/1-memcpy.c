@@ -1,42 +1,25 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 
 /**
- * main - random password generator for 101-crackme
- *
- * Return: always 0
+ * _memcpy - Copies @n bytes from the memory area pointed
+ * to by @src into that pointed to by @dest.
+ * @dest: A pointer to the memory area to copy @src into.
+ * @src: The source buffer to copy characters from.
+ * @n: The number of bytes to copy from @src.
+ * Return: A pointer to the destination buffer @dest.
  */
-int main(void)
-{
-	int i, j, k, s;
-	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char p[58];
 
-	srand(time(NULL));
-	while (s != 2772)
-	{
-		i = k = s = 0;
-		while ((2772 - 122) > s)
-		{
-			j = rand() % 62;
-			p[i] = c[j];
-			s += c[j];
-			i++;
-		}
-		while (c[k])
-		{
-			if (c[k] == (2772 - s))
-			{
-				p[i] = c[k];
-				s += c[k];
-				i++;
-				break;
-			}
-			k++;
-		}
-	}
-	p[i] = '\0';
-	printf("%s", p);
-	return (0);
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int index;
+
+	char *destination = dest;
+
+	char *source = src;
+
+	for (index = 0; index < n; index++)
+
+		destination[index] = source[index];
+
+	return (dest);
 }
